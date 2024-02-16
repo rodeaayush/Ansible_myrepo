@@ -3,7 +3,7 @@
   hosts: all
   vars_files: kalyani.yml
   tasks:
-    - name:This is my first file variable task
+    - name: This is my first file variable task
       debug:
         msg: "{{URL}}"
 ...
