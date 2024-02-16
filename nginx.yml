@@ -13,3 +13,4 @@
       apt:
         name: nginx  # This is the package name for Nginx in Ubuntu/Debian systems
         state: present  # Ensure that Nginx is present, you can use 'latest' to ensure it's up-to-date
+

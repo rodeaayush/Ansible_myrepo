@@ -1,0 +1,11 @@
+--- 
+- name: This is my local variable playbook
+  hosts: all
+  tasks:  
+    - name: Now, we are using local variable playbook
+      debug:
+        msg: "{{URL}}"
+      vars:
+       URL: www.local_variable.com
+        URL: www.hp.com   
+...
