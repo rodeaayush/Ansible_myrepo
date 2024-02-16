@@ -1,0 +1,14 @@
+--- 
+- name: This is my prompt variable playbook
+  hosts: all
+  vars_prompt:
+    - name: URL
+      prompt: "Enter your URL"
+# private: yes
+
+  tasks:
+    - name: This is my prompt variable task
+      debug:
+        msg:  "{{URL}}"
+...
+
