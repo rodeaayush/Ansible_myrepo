@@ -2,11 +2,10 @@
 - name: My Global variable playbook
   hosts: all
   vars:
-    URL: "www.office.com"
+    URL: "www.office.com"  # Corrected line: Added quotes around the URL value
 
   tasks:
     - name: My task one for global variable playbook
       debug:
-      msg: "{{ URL }}"   
-
-...      
+        msg: "{{ URL }}"
+...
