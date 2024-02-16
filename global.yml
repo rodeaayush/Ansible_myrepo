@@ -2,7 +2,7 @@
 - name: My Global variable playbook
   hosts: all
   vars:
-    URL:www.office.com
+    URL:"www.office.com"
 
   tasks:
     - name: My task one for global variable playbook
