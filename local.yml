@@ -7,5 +7,5 @@
         msg: "{{URL}}"
       vars:
        URL: www.local_variable.com
-        URL: www.hp.com   
+       URL: www.hp.com   
 ...
