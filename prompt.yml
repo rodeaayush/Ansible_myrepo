@@ -1,5 +1,5 @@
 --- 
-- name: This is my prompt variable playbook
+- name: This is my Prompt Variable Playbook
   hosts: all
   vars_prompt:
     - name: URL

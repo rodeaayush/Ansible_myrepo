@@ -6,6 +6,7 @@
       debug:
         msg: "{{URL}}"
       vars:
-       URL: www.local_variable.com
-       URL: www.hp.com   
+       URL:
+       - www.local_variable.com
+       - www.hp.com     
 ...
