@@ -18,13 +18,13 @@
       when: ansible_os_family == "Debian"   
 
     - name : start httpd
-      package: 
+      service: 
         name: httpd
         state: started
       when: ansible_os_family == "RedHat"   
 
     - name : start apache2
-      package: 
+      service: 
         name: apache2
         state: started
       when: ansible_os_family == "Debian"   
