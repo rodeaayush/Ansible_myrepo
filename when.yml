@@ -2,7 +2,7 @@
 
 - name: Installation of my web-server
   hosts: all
-  become: ture
+  become: true
   tasks: 
     - name : install web package
       package: 
