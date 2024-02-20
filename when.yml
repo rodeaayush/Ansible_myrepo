@@ -5,25 +5,25 @@
   become: ture
   tasks: 
     - name : install web package
-        package: 
+      package: 
         name: httpd
         state: latest
       when: ansible_os_family == "RedHat"   
 
     - name : install web package
-        package: 
+      package: 
         name: apache2
         state: latest
       when: ansible_os_family == "Debian"   
 
     - name : install web package
-        package: 
+      package: 
         name: httpd
         state: started
       when: ansible_os_family == "RedHat"   
 
     - name : install web package
-        package: 
+      package: 
         name: httpd
         state: started
       when: ansible_os_family == "RedHat"   
