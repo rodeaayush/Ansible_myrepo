@@ -11,17 +11,31 @@
 
 # ...
 
+# ---
+# - name: This is my shell playbook
+#   hosts: all 
+#   become: true
+#   tasks: 
+#     - shell: echo "This is Online batch " >> /mnt/analysis.txt
+#     - name: This is our first shell task
+#       debug:
+#         msg: "{{ ansible_distribution }}"
+# ...
+
+
 ---
-- name: This is my shell playbook
-  hosts: all 
+- name: Execute Shell Command
+  hosts: all
   become: true
-  tasks: 
-    - shell: echo "This is Online batch " >> /mnt/analysis.txt
-    - name: This is our first shell task
+  tasks:
+    - name: Run a shell command and capture the output
+      command: hostname
+      register: hostname_output
+
+    - name: Display the hostname
       debug:
-        msg: "{{ ansible_distribution }}"
-
-
+        msg: "The hostname is {{ hostname_output.stdout }}"
+...
 
 
 
