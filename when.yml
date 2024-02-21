@@ -7,13 +7,13 @@
     - name : install web package
       package: 
         name: httpd
-        state: latest
+        state: present
       when: ansible_os_family == "RedHat"   
 
     - name : install web package
       package: 
         name: apache2
-        state: latest
+        state: present
         update_cache: yes
       when: ansible_os_family == "Debian"   
 
