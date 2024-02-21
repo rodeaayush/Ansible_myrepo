@@ -1,0 +1,9 @@
+---
+- name: Uninstall Nginx Package
+  hosts: all
+  become: true
+  tasks:
+    - name: Uninstall Nginx package
+      package:
+        name: nginx
+        state: absent
