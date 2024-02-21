@@ -1,0 +1,9 @@
+---
+- name: Example Playbook
+  hosts: all
+  become: true
+  tasks:
+    - name: Ensure Apache2 is uninstalled
+      apt:
+        name: apache2
+        state: absent
