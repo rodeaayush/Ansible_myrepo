@@ -1,0 +1,34 @@
+
+# *
+# **
+# ***
+# ****
+# *****
+# ******
+# *******
+# *********
+
+--- 
+
+- name: This is my shell playbook
+  hosts: all 
+  become: true
+  tasks: 
+    - shell: echo "This is Online batch " >> /mnt/analysis
+    - name: This is our first shell task
+      debug:
+      msg: "{{ansible_distribution}}"
+
+
+
+
+
+
+
+
+
+
+
+
+
+
