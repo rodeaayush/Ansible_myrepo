@@ -1,0 +1,14 @@
+
+--- 
+- name : This is Tag file
+  hosts: all 
+  tasks: 
+    - name: Print Message One
+      debug:
+        msg: "write anything:{{ansible_user_gid}}"
+        tags: tagone
+    - name: Print Message two
+      debug:
+        msg: "Write anything:{{ansible_env.LOGNAME}}"
+        tags: tagtwo
+...
